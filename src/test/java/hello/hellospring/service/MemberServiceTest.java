@@ -19,6 +19,7 @@ class MemberServiceTest {
     //새로 MemoryMemberRepository를 만들 경우 기존의 MemberService.java에서 만들어진 거랑 다른 인스턴스이다.
     //이를 해결 하기 위해서 Member Service에서 Repository를 바꿔준다. --> 외부에서 repository를 넣어주게 변경 원래 파일과 Test파일 모두다
     //DI Dependency Injections
+    //
     MemoryMemberReopsitory memberReopsitory ;
 
     //외부에서 넣어주게 바꿔주기

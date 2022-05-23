@@ -1,7 +1,11 @@
 package hello.hellospring.domain;
 
-public class Member {
+import javax.persistence.*;
 
+@Entity
+public class Member {
+    //Generation.Identity 는 DB가 알아서 Id값을 생성 해준다.
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 

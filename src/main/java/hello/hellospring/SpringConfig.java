@@ -18,11 +18,12 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
-        /*private final DataSource dataSource;
+        private final MemberRepository memberRepository;
 
-        public SpringConfig(DataSource dataSource) {
-                this.dataSource = dataSource;
+        public SpringConfig(MemberRepository memberRepository) {
+                this.memberRepository = memberRepository;
         }
+<<<<<<< HEAD
         */
 
 
@@ -45,5 +46,11 @@ public class SpringConfig {
                 //        return new JdbcMemberRepository(dataSource);
                 //        return new JdbcTemplateMemberRepository(dataSource);
                 return new JPAMemberRepositoy(em);
+=======
+
+        @Bean
+        public MemberService memberService() {
+                return new MemberService(memberRepository);
+>>>>>>> 781cedc228b4be15b4228edd446428cbd748480f
         }
 }

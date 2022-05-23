@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+//gitTest
 //@Service //Controller에서 사용할수 있게 해준다.
 public class MemberService {
 
